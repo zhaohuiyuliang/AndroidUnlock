@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ShareProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <color name="textcolor_blue">#ff4799ee</color>
+    <color name="textcolor_white">#ffffffff</color>
+    <color name="yellow">#ffd400</color>
+
+    <string name="unlock_pattern_intro">请绘制解锁图案</string>
+
+</resources>

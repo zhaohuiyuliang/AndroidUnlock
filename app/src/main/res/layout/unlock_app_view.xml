@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tv_password_prompt"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/textcolor_blue"
+        android:gravity="center"
+        android:text="@string/unlock_pattern_intro"
+        android:textColor="@color/textcolor_white"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/img_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/tv_password_prompt"
+        android:src="@color/yellow" />
+
+    <yu.jishang.com.unlock.com.demo.custom.view.UnlockAppView
+        android:id="@+id/unlockView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_bg" />
+
+</RelativeLayout>

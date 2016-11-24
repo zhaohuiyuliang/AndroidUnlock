@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="yu.jishang.com.unlock"
+          android:versionCode="1"
+          android:versionName="1.0">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar">
+        <activity
+            android:name=".com.demo.custom.view.UnlockApp"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".com.example.shareproject.EventActivity"/>
+        <activity android:name=".com.demo.app.statistics.AppStatistics"/>
+
+        <provider
+            android:name=".com.contentprovider.demo.FlowerContentProvider"
+            android:authorities="com.example.dameonservice">
+        </provider>
+
+        <receiver android:name=".com.broadcast.demo.SystemReceiver">
+            <intent-filter>
+
+                <!-- 在屏幕开启后,系统发出的广播 -->
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
